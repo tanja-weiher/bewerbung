@@ -36,12 +36,25 @@
         padding: 1.25rem;
         border-radius: 8px;
         margin-bottom: 1.5rem;
+        display: flex;
+        justify-content: space-between;
+        align-items: stretch;
+        gap: 1rem;
+        height: 160px;
+      }
+
+      .logo {
+        height: 100%;
+        width: auto;
+        max-width: none;
+        flex-shrink: 0;
+        object-fit: contain;
       }
 
       h1 {
         margin: 0;
         font-size: 2rem;
-        color: #001f3f;
+        color: #0e4c92;
       }
 
       .subtitle {
@@ -58,7 +71,7 @@
 
       h2 {
         margin-top: 0;
-        color: #001f3f;
+        color: #0e4c92;
       }
 
       ul {
@@ -74,8 +87,18 @@
   <body>
     <main>
       <header>
-        <h1>Tanja Weiher Bewerbung</h1>
-        <p class="subtitle">Mein Weg zur Verwaltungsfachangestellten</p>
+        <div style="display: flex; flex-direction: column; justify-content: center">
+          <h1>Tanja Weiher Bewerbung</h1>
+          <p class="subtitle">
+            Bewerbung um die Ausbildung zum Verwaltungsfachangestellten &ndash; Fachrichtung
+            Kommunalverwaltung bei der Stadt Roth (Ausbildungsbeginn 1. September 2027)
+          </p>
+        </div>
+        <img
+          class="logo"
+          src="Bild_Roth.jpeg"
+          alt="Logo Stadt Roth"
+        />
       </header>
 
       <section>
